@@ -22,6 +22,7 @@ pyflakes = ["+*"]
 mccabe = ["+*"]
 pylint = [
     "+*",
+    "-C0301", # line-too-long -> already covered by flake E501 
     "-C0411", # wrong-import-order - this will be handled by isort
     "-F6401", # cannot-enumerate-pytest-fixtures
 ]

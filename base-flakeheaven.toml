@@ -16,7 +16,7 @@ max_line_length = 88
 pyflakes = ["-F401"] # __init__ files can have imports just to allow "shortcuts"
 
 [tool.flakeheaven.plugins]
-pycodestyle = ["+*", "-W503", "-W504", "-W605"]
+pycodestyle = ["+*", "-E203", "-W503", "-W504", "-W605"]
 pyflakes = ["+*"]
 "flake8-*" = ["+*", "-Q000"]
 mccabe = ["+*"]

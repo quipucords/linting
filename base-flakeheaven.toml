@@ -18,7 +18,11 @@ pyflakes = ["-F401"] # __init__ files can have imports just to allow "shortcuts"
 [tool.flakeheaven.plugins]
 pycodestyle = ["+*", "-E203", "-W503", "-W504", "-W605"]
 pyflakes = ["+*"]
-"flake8-*" = ["+*", "-Q000"]
+"flake8-*" = [
+    "+*",
+    "-D403", # First word of the first line should be properly capitalized - no, it doesn't :P
+    "-Q000",
+]
 mccabe = ["+*"]
 pylint = [
     "+*",

@@ -30,4 +30,5 @@ pylint = [
     "-C0411", # wrong-import-order - this will be handled by isort
     "-F6401", # cannot-enumerate-pytest-fixtures
     "-R0903", # too-few-public-methods - we don't necessarily see this as a bad thing
+    "-W0611", # unused-import -> already covered by flake F401
 ]

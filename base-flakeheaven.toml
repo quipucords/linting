@@ -31,3 +31,8 @@ pylint = [
     "-F6401", # cannot-enumerate-pytest-fixtures
     "-R0903", # too-few-public-methods - we don't necessarily see this as a bad thing
 ]
+
+[tool.flakeheaven.exceptions."**/conftest.py"]
+pylint = [
+    "-C0415", # import-outside-toplevel - importing on toplevel can affect mocking
+]

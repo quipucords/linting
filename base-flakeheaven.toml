@@ -28,6 +28,7 @@ pylint = [
     "+*",
     "-C0301", # line-too-long -> already covered by flake E501 
     "-C0411", # wrong-import-order - this will be handled by isort
+    "-E1131", # unsupported-binary-operation -> https://github.com/PyCQA/pylint/issues/6359
     "-F6401", # cannot-enumerate-pytest-fixtures
     "-R0903", # too-few-public-methods - we don't necessarily see this as a bad thing
     "-W0611", # unused-import -> already covered by flake F401

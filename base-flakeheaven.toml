@@ -32,6 +32,7 @@ pylint = [
     "-F6401", # cannot-enumerate-pytest-fixtures
     "-R0903", # too-few-public-methods - we don't necessarily see this as a bad thing
     "-W0611", # unused-import -> already covered by flake F401
+    "-E1101", # no-member -> throws too-many false positives
 ]
 
 [tool.flakeheaven.exceptions."**/conftest.py"]

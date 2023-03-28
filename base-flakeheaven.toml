@@ -39,3 +39,7 @@ pylint = [
 pylint = [
     "-C0415", # import-outside-toplevel - importing on toplevel can affect mocking
 ]
+[tool.flakeheaven.exceptions."**/*test*.py"]
+pylint = [
+    "-C1803", # use-implicit-booleaness-not-comparison
+]
